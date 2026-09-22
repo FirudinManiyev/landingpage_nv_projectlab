@@ -1,0 +1,207 @@
+/* =========================================
+   Reset & Base
+   ========================================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #fafaf9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* =========================================
+   Layout
+   ========================================= */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* =========================================
+   Header
+   ========================================= */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+}
+
+.brand-dot {
+    color: #2563eb;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.main-nav a:hover {
+    color: #2563eb;
+}
+
+/* =========================================
+   Hero
+   ========================================= */
+.hero {
+    padding: 6rem 0;
+}
+
+.hero-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.8rem;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.accent {
+    color: #2563eb;
+}
+
+.lead {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin: 0 auto 2.5rem;
+    max-width: 580px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+.site-footer {
+    background-color: #111827;
+    color: #d1d5db;
+    padding: 2rem 0;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    color: #9ca3af;
+}
+
+.site-footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divider {
+    color: #4b5563;
+}
+
+/* =========================================
+   Responsive — Mobile
+   ========================================= */
+@media (max-width: 640px) {
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        gap: 1.25rem;
+    }
+}
