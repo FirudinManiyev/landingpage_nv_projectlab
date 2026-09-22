@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Firudin Maniyev — şəxsi portfolio səhifəsi.">
-    <title>Firudin Maniyev</title>
+    <title>Firudin Maniyev — Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,11 @@
     <!-- ===== HEADER ===== -->
     <header class="site-header">
         <div class="container header-inner">
-            <a href="#home" class="brand">Firudin<span class="brand-dot">.</span></a>
+            <a href="#home" class="brand" aria-label="Firudin Maniyev — ana səhifə">
+                <span class="brand-mark" aria-hidden="true">F</span>
+                <span class="brand-name">Firudin<span class="brand-dot">.</span></span>
+            </a>
+
             <nav class="main-nav" aria-label="Əsas naviqasiya">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -28,14 +32,35 @@
 
         <!-- Hero Section -->
         <section id="home" class="hero">
+            <!-- Dekorativ fon — arxa planda yumşaq rəng keçidi -->
+            <div class="hero-bg" aria-hidden="true"></div>
+
             <div class="container hero-inner">
+                <!-- CSS ilə hazırlanmış avatar (şəkil yoxdur) -->
+                <div class="avatar" aria-hidden="true">FM</div>
+
                 <p class="eyebrow">Personal Portfolio</p>
-                <h1>Salam, mən <span class="accent">Firudin Maniyev</span>.</h1>
+
+                <h1 class="hero-title">
+                    Salam, mən <span class="accent">Firudin Maniyev</span>.
+                </h1>
+
                 <p class="lead">
                     Veb inkişaf və dizayna marağı olan bir tələbəyəm.
                     Bu səhifədə sadə, təmiz və funksional layihələr yaratmaq səyahətim haqqında qısa məlumat tapa bilərsiniz.
                 </p>
-                <a href="#contact" class="btn">Mənimlə əlaqə</a>
+
+                <div class="cta-row">
+                    <a href="#contact" class="btn btn-primary">Mənimlə əlaqə</a>
+                    <a href="#about" class="btn btn-ghost">Haqqımda</a>
+                </div>
+
+                <ul class="stack-pills" aria-label="Bacarıqlar">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Responsive</li>
+                    <li>UI / UX</li>
+                </ul>
             </div>
         </section>
 
@@ -44,12 +69,20 @@
     <!-- ===== FOOTER ===== -->
     <footer id="contact" class="site-footer">
         <div class="container footer-inner">
+
+            <a href="#home" class="footer-brand" aria-label="Firudin Maniyev — ana səhifə">
+                <span class="brand-mark" aria-hidden="true">F</span>
+                <span>Firudin Maniyev</span>
+            </a>
+
             <p class="copyright">&copy; 2026 Firudin Maniyev. Bütün hüquqlar qorunur.</p>
+
             <p class="contact-info">
-                <a href="mailto:firudin@example.com">firudinmaniyev@gmail.com</a>
+                <a href="mailto:firudin@example.com">firudin@example.com</a>
                 <span class="divider" aria-hidden="true">·</span>
                 <span>Bakı, Azərbaycan</span>
             </p>
+
         </div>
     </footer>
 
